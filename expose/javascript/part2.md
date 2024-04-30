@@ -13,3 +13,11 @@ ANS: `150` is printed by node.js. line 14 `console.log(finalPrice);` is trying t
 **4. What will this function return? Give a brief explanation why. If the code causes an error, explain why.**
 
 ANS: it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is because all functions have a valid scope and the function is error free.
+
+**5. What will happen at line 12 and why?  If the code causes an error, explain why (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5))**
+
+ANS: ERROR as `console.log(i);` is calling for `i` which is defined by `let` meaning it has block scope assigned to the for loop in line 6. As line 12 is outside of the for loop, it does not have access and hence  error `ReferenceError: i is not defined` is thrown.
+
+**6.  What will happen at line 13 and why? If the code causes an error, explain why.**
+
+ANS: ERROR as `console.log(discountedPrice);` is calling for `discountedPrice` which is defined by `let` meaning it has block scope assigned to the for loop in line 6. As line 13 is outside of the for loop, it does not have access and hence error `ReferenceError: discountedPrice is not defined` is thrown.

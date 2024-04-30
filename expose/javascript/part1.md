@@ -18,6 +18,6 @@ ANS: ERROR. as we are using the `let` declaration in line 5 `let result = 0;`, t
 
 ANS: ERROR. In line 7 we run `result = num1 + num2;` and the result is declared as a constant which means that it cannot be edited/changed. As we are trying to change it, a `TypeError: Assignment to constant variable` error is thrown.
 
-***6. What is printed by line 13? If the code returns an error, explain why.**
+**6. What is printed by line 13? If the code returns an error, explain why.**
 
 ANS: ERROR. In line 7 we run `result = num1 + num2;` and the result is declared as a constant which means that it cannot be edited/changed. As we are trying to change it, a `TypeError: Assignment to constant variable` error is thrown.

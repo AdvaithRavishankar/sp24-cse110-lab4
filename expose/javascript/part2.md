@@ -57,4 +57,22 @@ D: `student["Favorite Teacher"].name`
 
 E: `student.courseload[0]`
 
+**13. Arithmetic**
+
+A: `32`
+
+B: `1`
+
+C: `3`
+
+D: `3null`
+
+E: `4`
+
+F: `0`
+
+G: `3undefined`
+
+H: `NaN`
+
 

@@ -1,6 +1,6 @@
 **1. What will happen at line 12 and why? If the code causes an error, explain why?**
 
-ANS: `3` is printed by the console. This is because i has a `var` decelaration which gives the entire function scope to access i. As i is incremented to the lenght of the list `prices`, with the input `[100, 200, 300]` i is incremented 3 times hence 3. Line 12 `console.log(i);` log accesses this and prints `3`. 
+ANS: `3` is printed by the console. This is because i has a `var` decelaration which gives the entire function scope to access i. As i is incremented to the length of the list `prices`, with the input `[100, 200, 300]` i is incremented 3 times hence 3. Line 12 `console.log(i);` log accesses this and prints `3`. 
 
 **2. What will happen at line 13 and why? If the code causes an error, explain why?**
 
@@ -32,5 +32,17 @@ ANS: `150` is printed as line 14 `console.log(finalPrice);` is trying to print `
 
 ANS: it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is `return discounted;` calls for `let discounted
  = []`  which is at the root of the function. let has a block scope but in this instance, the entire function is part of the block so it is accessible. 
+
+**9. What will happen at line 11 and why? If the code causes an error, explain why.**
+
+ANS: ERROR as `console.log(i);` is calling for `i` which is defined by `const` meaning it has block scope assigned to the for loop in line 6. As line 11 is outside of the for loop, it does not have access and hence  error `ReferenceError: i is not defined` is thrown.
+
+**10. What will happen at line 12 and why? If the code causes an error, explain why.**
+
+ANS: 3 is printed as `length` is defined by `const length = prices.length;` which has block scope. As it is defined in the root of the function, the whole function can access it and as it refers to the length of the input array `prices` which is `[100, 200, 300]`, it prints `3`.
+
+**11. What will this function return? Give a brief explanation. If the code causes an error, explain why.**
+
+ANS: `[ 50, 100, 150 ]`. `discounted` is an array object and the `const` tag does disallow adding new objects. `const discountedPrice = prices[i]*(1-discount);` is repeadtedly redefined which does not violatet that const is immutable. And the discountedPrice when pushed into the list changes its scope. Hence, it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is `return discounted;` calls for `const discounted  = []`  which is at the root of the function. const has a block scope but in this instance, the entire function is part of the block so it is accessible.
 
 

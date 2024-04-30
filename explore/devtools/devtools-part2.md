@@ -1,3 +1,5 @@
+link to other screenshots: 
+
 **1. What was the bug?**
 
 ANS: the variables num1 and num2 are strings and not integers/numbers. Hence, when we run `calculateSum` it concatenates the strings together, producing the buggy sum calculation.

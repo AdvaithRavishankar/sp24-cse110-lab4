@@ -5,3 +5,6 @@ ANS: `3` is printed by the console. This is because i has a `var` decelaration w
 ***2. What will happen at line 13 and why? If the code causes an error, explain why?***
 
 ANS: `150` is printed by node.js. line 13 `console.log(discountedPrice)` is trying to print `var discountedPrice = prices[i]*(1-discount);` which has a var scope which is accessible by the entire function. As the last set is the discount of 50% applied to the last entry of `[100, 200, 300]`, 0.5*300=150 which is printed.
+
+***3. What will happen at line 14 and why? If the code causes an error, explain why?***
+ANS: `150` is printed by node.js. line 14 `console.log(finalPrice);` is trying to print `finalPrice = Math.round(discountedPrice*100)/100;` which has a var scope defined by `var finalPrice = 0;` which is accessible by the entire function. As the last set is the discount of 50% applied to the last entry of `[100, 200, 300]`, Math.round(150*100)/100 = 150 which is printed.

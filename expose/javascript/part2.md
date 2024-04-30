@@ -75,4 +75,19 @@ G: `3undefined`
 
 H: `NaN`
 
+**14. Comparison**
+
+A: `true`
+
+B: `false`
+
+C: `true`
+
+D: `false`
+
+E: `false`
+
+f: `true`
+
+
 

@@ -1,6 +1,6 @@
 **1. What was the bug?**
 
-ANS: the variables num1 and num2 are strings and not integers/numbers. Hence, when we run `calculateSum` it concatenates the strings together, producing the buggy add calculation.
+ANS: the variables num1 and num2 are strings and not integers/numbers. Hence, when we run `calculateSum` it concatenates the strings together, producing the buggy sum calculation.
 
 *2. How would you fix it? Include a screenshot of your fix. Name it fix.png (or whatever image extension you would like to use) and add it to your expand/screenshots directory.**
 

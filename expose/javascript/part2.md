@@ -89,5 +89,10 @@ E: `false`
 
 f: `true`
 
+**15. Explain the difference between the == and === operators**
+
+ANS: `==` performs type conversion so both are the same type and then checks for equality and `===` checks equality without conversion.
+
+
 
 

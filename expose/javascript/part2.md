@@ -98,5 +98,9 @@ ANS: `==` performs type conversion so both are the same type and then checks for
 ANS: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js](https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js)
 
 
+**17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development**
+
+ANS: `[ 2, 4, 6 ]` will be outputs as the function `modifyArray` applies function `doSomething` on each element, adds it to the array. As `[1, 2, 3]` is the input, and `doSomething` multiples each element by 2, `[ 2, 4, 6 ]` is printed.
+
 
 

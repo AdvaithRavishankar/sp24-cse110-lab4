@@ -21,3 +21,9 @@ ANS: ERROR as `console.log(i);` is calling for `i` which is defined by `let` mea
 **6.  What will happen at line 13 and why? If the code causes an error, explain why.**
 
 ANS: ERROR as `console.log(discountedPrice);` is calling for `discountedPrice` which is defined by `let` meaning it has block scope assigned to the for loop in line 6. As line 13 is outside of the for loop, it does not have access and hence error `ReferenceError: discountedPrice is not defined` is thrown.
+
+**7. What will happen at line 14 and why? If the code causes an error, explain why.**
+
+ANS: `150` is printed as line 14 `console.log(finalPrice);` is trying to print `finalPrice = Math.round(discountedPrice*100)/100;` which has a let scope defined by `let finalPrice = 0;` which is at the root of the function. let has a block scope but in this instance, the entire function is part of the block so it accesible. As the last set is the discount of 50% applied to the last entry of `[100, 200, 300]`, Math.round(150*100)/100 = 150 which is printed.
+
+

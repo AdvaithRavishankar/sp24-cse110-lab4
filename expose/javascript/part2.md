@@ -102,5 +102,8 @@ ANS: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/ja
 
 ANS: `[ 2, 4, 6 ]` will be outputs as the function `modifyArray` applies function `doSomething` on each element, adds it to the array. As `[1, 2, 3]` is the input, and `doSomething` multiples each element by 2, `[ 2, 4, 6 ]` is printed.
 
+**18. The above program only prints out the time once when executed. Modify this code such that the program prints out the current time every second.  (This should be a JS file - part2-question18.js) **
+
+ANS: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js](https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js)
 
 

@@ -45,4 +45,16 @@ ANS: 3 is printed as `length` is defined by `const length = prices.length;` whic
 
 ANS: `[ 50, 100, 150 ]`. `discounted` is an array object and the `const` tag does disallow adding new objects. `const discountedPrice = prices[i]*(1-discount);` is repeadtedly redefined which does not violatet that const is immutable. And the discountedPrice when pushed into the list changes its scope. Hence, it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is `return discounted;` calls for `const discounted  = []`  which is at the root of the function. const has a block scope but in this instance, the entire function is part of the block so it is accessible.
 
+**12. Given the above Object, write the notation for:**
+
+A: `student.name`
+
+B: `student["Grad Year"]`
+
+C: `student.greeting()`
+
+D: `student["Favorite Teacher"].name`
+
+E: `student.courseload[0]`
+
 

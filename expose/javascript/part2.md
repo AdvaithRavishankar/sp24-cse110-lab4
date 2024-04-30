@@ -12,8 +12,9 @@ ANS: `150` is printed by node.js. line 14 `console.log(finalPrice);` is trying t
 
 **4. What will this function return? Give a brief explanation why. If the code causes an error, explain why.**
 
-ANS: it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is because all functions have a valid scope and the function is error free.
-
+ANS: it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is `return discounted;` calls for `var discounted
+ = []` which has a full function scope and is accessible.
+ 
 **5. What will happen at line 12 and why?  If the code causes an error, explain why (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5))**
 
 ANS: ERROR as `console.log(i);` is calling for `i` which is defined by `let` meaning it has block scope assigned to the for loop in line 6. As line 12 is outside of the for loop, it does not have access and hence  error `ReferenceError: i is not defined` is thrown.
@@ -24,6 +25,12 @@ ANS: ERROR as `console.log(discountedPrice);` is calling for `discountedPrice` w
 
 **7. What will happen at line 14 and why? If the code causes an error, explain why.**
 
-ANS: `150` is printed as line 14 `console.log(finalPrice);` is trying to print `finalPrice = Math.round(discountedPrice*100)/100;` which has a let scope defined by `let finalPrice = 0;` which is at the root of the function. let has a block scope but in this instance, the entire function is part of the block so it accesible. As the last set is the discount of 50% applied to the last entry of `[100, 200, 300]`, Math.round(150*100)/100 = 150 which is printed.
+ANS: `150` is printed as line 14 `console.log(finalPrice);` is trying to print `finalPrice = Math.round(discountedPrice*100)/100;` which has a let scope defined by `let finalPrice = 0;` which is at the root of the function. let has a block scope but in this instance, the entire function is part of the block so it is accessible. As the last set is the discount of 50% applied to the last entry of `[100, 200, 300]`, Math.round(150*100)/100 = 150 which is printed.
+
+
+**8. What will this function return? Give a brief explanation. If the code causes an error, explain why.**
+
+ANS: it return `[ 50, 100, 150 ]` which is 50% discount applied to `[100, 200, 300]` respectiely. This is `return discounted;` calls for `let discounted
+ = []`  which is at the root of the function. let has a block scope but in this instance, the entire function is part of the block so it is accessible. 
 
 

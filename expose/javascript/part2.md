@@ -106,4 +106,12 @@ ANS: `[ 2, 4, 6 ]` will be outputs as the function `modifyArray` applies functio
 
 ANS: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js](https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js)
 
+**19. What is the output of the above code? (This should be in your part2.md)**
+
+ANS:
+1
+4
+3
+2
+
 

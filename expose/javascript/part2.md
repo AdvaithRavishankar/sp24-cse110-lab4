@@ -109,9 +109,11 @@ ANS: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/blob/main/expose/ja
 **19. What is the output of the above code? (This should be in your part2.md)**
 
 ANS:
+
 1
+
 4
+
 3
+
 2
-
-

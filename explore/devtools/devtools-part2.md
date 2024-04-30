@@ -1,4 +1,4 @@
-link to other screenshots: 
+link to other screenshots: [https://github.com/AdvaithRavishankar/sp24-cse110-lab4/tree/main/expand/screenshots](https://github.com/AdvaithRavishankar/sp24-cse110-lab4/tree/main/expand/screenshots)
 
 **1. What was the bug?**
 
